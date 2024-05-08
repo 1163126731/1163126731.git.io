@@ -1,0 +1,160 @@
+
+body{
+    margin: auto;;
+    padding:0.2%;
+}
+.main{
+    
+   width:100%;
+   background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5)20%,
+            rgba(0, 51, 255, 0.5)80%),url(nebula-space-dark-5k-58-2560x1600.jpg);
+            
+            background-position :center fixed;
+    background-size:cover;
+    
+    height :109vh;
+
+    
+    
+
+}
+.navigationbr{
+    width :100%;
+    height:75px;
+    margin:auto;
+
+}
+.icon{
+
+    width:15px;
+    float:middle;
+    position:absolute;
+    
+}
+.logo{
+
+    color:lime;
+    font-size:larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+    padding-top:5px;
+    
+ 
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+    width :80%;
+    line-height:2px;
+    margin:auto;
+   
+  
+
+}
+.btmbr{
+    height:20px;
+   width :100%;
+    text-align: center;
+   margin:auto;
+
+
+   position:relative;
+}
+ul{
+    
+    width:80%;
+    align-items:center;
+    justify-content: space-between;
+    display:inline-flex;
+    position:relative;
+
+
+}
+ul li{
+    padding:auto;
+    list-style: none;
+    margin-left:20px ;
+    font-size: 20px;
+    padding-top:95vh;
+
+ 
+}
+ul li a{
+    text-decoration: dashed;
+    color:black;
+    font-family: Cambria;
+    font-weight: bold;
+    font:bold;
+    transition:0.4s ease-in-out;
+    height:auto;
+    width:auto;
+}
+ul li a:hover{
+    color:lime;
+}
+
+.content{
+    padding-top:60px;
+    padding-left:200px;
+    width:auto;
+    margin:auto;
+    color:black;
+    position: absolute;
+    
+}
+.content .par{
+    color:chartreuse;
+    padding-left:2px;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing:1.2px;
+    padding-bottom:25px;
+    padding-top:150px;
+    line-height: 30px;
+    
+    /*background:linear-gradient(to top,rgba(0,0,0,0)50%,rgba(0,0,0,0)10%),url(LS7MDnP.jpg);
+*/
+}
+
+.content h1{
+    color:lime;
+    padding-top:50px;
+    text-align:start;
+    margin-left:5%;
+    margin-bottom: -10%;
+    letter-spacing:2px;
+ 
+}
+.slide{
+    background-size:contain;
+    position:60px absolute;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.slide1{
+    background-image: url(poster_mercury_front_a.jpg)
+}
+.slide-content{
+    display:flex;
+    text-align: center;
+}
+.slide-content span{
+    font-size:5rem;
+    color:red ;
+}
+.arrow{
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    margin-top:50px;
+    width:10px;
+    height:20px;
+    border-style:solid;
+
+}
+#arrow-left{
+    border-width:30px 40px 30px 0;
+    left:0;
+}
+
+
+/*background-image :url("starpic.jpeg")*/
