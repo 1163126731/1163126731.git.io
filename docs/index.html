@@ -1,61 +1,75 @@
-<html lang = "en">
+<html lang="en">
+
 <head>
     <meta charset="utf -8">
-    <meta name="viewport" content "width = device - width, initial-scale=1.0">
+    <meta name="viewport" content="width = device - width, initial-scale=1.0">
     <title>Main</title>
-    <link rel = "stylesheet" 
-        href ="styles.css">
+    <link rel="stylesheet" href="styles.css">
 
 
 </head>
-<body>
-    <div class ="main">
 
-        <div class = "navigationbr"> 
-                <div class ="icon">
-                    <h2 class = "logo">Peter Chan</h2>
-                </div>
-      
-            
+<body>
+    <div class="main">
+
+        <div class="navigationbr">
+            <div class="icon">
+                <h2 class="logo"><a href="index.html" tabindex="1">Peter Chan</a></h2>
+            </div>
+
+
 
             <div class="menu">
                 <div class="btmbr">
                     <ul>
-                        <li><a href = "#" > Home</a></li>
-                        <li><a href = "www.bilibili.com" > About  </a></li>
-                        <li><a href = "#" > Classes</a></li>
-                        <li><a href = "#" > Contact</a></li>
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="about.html"> About </a></li>
+                        <li><a href="ps.html"> Project & Skills</a></li>
+                        <li><a href="contact.html"> Contact</a></li>
 
                     </ul>
                 </div>
             </div>
-        
-            <div class = "content">
-                <h1 ><br>Peter Chan's<br><span>portfolio</span>  </h1>
+
+            <div class="content">
+                <!--header -->
+                <h1><br>Peter Chan's<br><span>portfolio</span> </h1>
+                <section class="container">
+
+                    <!--Slide wrap start with frame -->
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <!--image slides-->
+                            <img id="slide-1" src="01BB57A6-F6A2-48A5-B63C-2D275BFC1BBB.jpeg" width="20" hieght="2"
+                            alt="my photo next to lake" />
+                            <img id="slide-2" src="76728817-4A40-4F68-83F8-8B8C66B67232.jpeg" width="20" hieght="2"
+                            alt="my photo" />
+                            <img id="slide-3" src="88F1BDD1-0DE2-4FDA-B998-E262A4D206FE.jpeg" width="20" hieght="2"
+                            alt="peter's lab photo" />
+                        </div>
+                        <!--navigation dots -->
+                        <div class="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                            <a href="#slide-3"></a>
+                        </div>
+                    </div>
+                </section>
+                <!--paragraph content-->
                 <p class="par">This is an introduction to<br>
+
                     the projects that Peter has put his hands on<br>
                     这是Peter陈在他学术生涯和工作经历上<br>
                     接手过的项目的网站
-                    <img src ="/pictures/76728817-4A40-4F68-83F8-8B8C66B67232.jpeg">
+                    <img src="../pictures/76728817-4A40-4F68-83F8-8B8C66B67232.jpeg">
                 </p>
-            </div>
-        <div class ="wrap">
 
-            
-            <div id="arrow-left" class = "arrow">
-            </div>
-            <div id ="slider">
-                <div class="slide slide1">
-                    <div class="slide-content">
-                        <span>Image one </span>
-                    </div>            
-            </div>
-        </div>
 
-            <div id = "arrow-right" class = "arrow"></div>
             </div>
         </div>
     </div>
-    
+
+
 </body>
+
 </html>

@@ -4,18 +4,14 @@ body{
     padding:0.2%;
 }
 .main{
-    
-   width:100%;
+    z-index: 1;
+   min-width:1300px;
    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5)20%,
             rgba(0, 51, 255, 0.5)80%),url(nebula-space-dark-5k-58-2560x1600.jpg);
             
-            background-position :center fixed;
+    background-position :center;
     background-size:cover;
-    
-    height :109vh;
-
-    
-    
+    min-height :109vh;
 
 }
 .navigationbr{
@@ -32,12 +28,14 @@ body{
     
 }
 .logo{
-
+    cursor:pointer;
+    opacity:0.7;
     color:lime;
     font-size:larger;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 20px;
     padding-top:5px;
+    transition: 0.4s ease-in-out;
     
  
 }
@@ -47,12 +45,18 @@ body{
     width :80%;
     line-height:2px;
     margin:auto;
-   
-  
-
 }
 .btmbr{
     height:20px;
+   width :100%;
+    text-align: center;
+   margin:auto;
+
+
+   position:relative;
+}
+.btmbr1{
+ 
    width :100%;
     text-align: center;
    margin:auto;
@@ -67,9 +71,18 @@ ul{
     justify-content: space-between;
     display:inline-flex;
     position:relative;
+}
 
+.myli{
+    padding:auto;
+    list-style: none;
+    margin-left:20px ;
+    font-size: 20px;
+    padding-top:275vh;
 
 }
+
+
 ul li{
     padding:auto;
     list-style: none;
@@ -99,7 +112,7 @@ ul li a:hover{
     width:auto;
     margin:auto;
     color:black;
-    position: absolute;
+    position: absolute sticky;
     
 }
 .content .par{
@@ -124,37 +137,147 @@ ul li a:hover{
     letter-spacing:2px;
  
 }
-.slide{
-    background-size:contain;
-    position:60px absolute;
-    background-position:center;
-    background-repeat: no-repeat;
+
+.slider-wrapper{
+    position:relative;
+    max-width:48rem;
+    margin:0 auto;
+    max-height:20rem;
 }
-.slide1{
-    background-image: url(poster_mercury_front_a.jpg)
-}
-.slide-content{
+.slider{
+    float:right;
+    background-color: red;
+    width:700px;
+
     display:flex;
-    text-align: center;
+    overflow-x:auto;
+    aspect-ratio: 16/9;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    border-radius:0.5rem;
+    z-index: 0;
 }
-.slide-content span{
-    font-size:5rem;
-    color:red ;
+.slider img{
+    flex:0 0 100%;
+    scroll-snap-align:start ;
+    object-fit: cover;
+    height:400px;
+    width:100%;
 }
-.arrow{
-    cursor:pointer;
+.slider-nav{
+    display:flex;
+    column-gap:1rem;
     position:absolute;
-    top:50%;
-    margin-top:50px;
-    width:10px;
-    height:20px;
-    border-style:solid;
-
+    bottom:20rem;
+    left:80%;
+    transform:translateX(-50%);
+    z-index:1;
 }
-#arrow-left{
-    border-width:30px 40px 30px 0;
-    left:0;
+.slider-nav a {
+    width:0.5rem;
+    height:0.5rem;
+    background-color:white;
+    opacity:0.75;
+    border-radius:50%;
+    transition:opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity:1;
+}
+#slide-1{
+
+    margin:0 0 0 15px;
+}
+.icon a:visited{
+    color:lime;
 }
 
+.abcontent{
+    padding-top:60px;
+    padding-left:30px;
+    padding-right:30px;
+    height:auto;
+    width:auto;
+    margin:auto;
 
-/*background-image :url("starpic.jpeg")*/
+    position: absolute sticky;
+    
+}
+.abcontent .par{
+    color:black;
+ 
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing:1.2px;
+    padding-bottom:25px;
+    padding-top:150px;
+    line-height: 30px;
+    
+    /*background:linear-gradient(to top,rgba(0,0,0,0)50%,rgba(0,0,0,0)10%),url(LS7MDnP.jpg);
+*/
+}
+
+.abcontent h1{
+    color:lime;
+    padding-top:5px;
+    text-align:start;
+    text-decoration: dashed;
+    margin-left:2%;
+    margin-bottom: -10%;
+    letter-spacing:2px;
+ 
+}
+.abcontent h2{
+    color:darkblue;
+    text-decoration: underline;
+    text-align:start;
+    margin-top:10%;
+
+    margin-bottom: -10%;
+    letter-spacing:2px;
+}
+ 
+.contesntss{
+    float:none;
+    background-color: #336699;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    height:285vh;
+    min-width:900px;
+    border:20px red;
+    border-style:double;
+    min-block-size: 20px;
+    
+}
+.contactcontent{
+    padding-top:60px;
+    background:url("../image/poster_mercury_front_a.jpg");
+
+    width:auto;
+    margin:auto;
+    color:black;
+    position: absolute sticky;
+    
+}
+.contactcontent h1{
+    color:lime;
+    padding-top:50px;
+    text-align:center;
+    letter-spacing:2px;
+ 
+}
+
+.contactcontent .par{
+    color:lime;
+    padding-top:50px;
+    text-align:center;
+    letter-spacing:2px;
+ 
+}
+
+.contactinfo{
+    padding:auto;
+    list-style: none;
+    margin-left:20px ;
+    font-size: 20px;
+    padding-top:95vh;
+}
