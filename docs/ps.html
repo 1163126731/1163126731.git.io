@@ -1,99 +1,81 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf -8">
-    <meta name="viewport" content="width = device - width, initial-scale=1.0">
-    <title>about</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Skills | Peter Chan</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-    <div class="main">
-        <div class="contesntss" style="height:250vh">
-            <div class="navigationbr">
-                <div class="icon">
-                    <h2 class="logo"><a href="index.html">Peter Chan</a></h2>
-                </div>
-                
-                 
+    <div class="main-container">
+        <nav class="navbar">
+            <h2 class="logo"><a href="index.html">Peter Chan</a></h2>
+        </nav>
 
-                <div class="abcontent">
-                     <!--paragraph content-->
-                    <h1 style="text-align:center;font-size:80px">Projects and skills</h1>
-                    <br></br>
-                    
-                
-                    <h2>University of Utah Research Assistant 2021-2023</h2>
-                    <p class = "par">
-                    Peter gained his optoelectronic skills while participating in Dr.Rogachev's laboratory.
-                    He was in charge of a on going project, which consists of spectrum analysis of a commercial OLED. 
-                    The project, in short, is where we try to discover a modeling method for OLEDs through it's light spectrum. The desired modeling  is 
-                    completed through admittance spectroscopy.
-                    <img src="Modeling inspiration.jpeg" style = "float:right"/>
-                    The definiton of admittance spectroscopy is the inspeciton on the current response of a device to small AC bias voltage modulation and its dependence on frequency.
-                    If we picture the OLED as a circuit that consists of series of capacitance(Energy stored) and resistors (Emitting layer), the conductance and susceptance of the circuit
-                    can successfully depecit the electrical chracteristics of our OLED. This brings further understanding on the OLED that one might not know of, the specturm analysis alone 
-                    gives one the ability to harness the chractreistics of one's need. 
-                
-                    <br>  </br>
-                   
-                    The position requires 
-                    extensive maitainence of structured Lab view code,python simulation, and LTspice for typical operational amplifer designs. 
-                    The design that Peter was in charge of was a two stage amplifing process which consists of two AD8065 high speed amplifers,
-                    with a stable feed back network and high cut off frequency, allowing our project to reach higher spectrum for better data analysis on 
-                    our program. 
+        <div class="content-wrapper">
+            <h1 class="page-title">Projects and Skills</h1>
+
+            <section class="project-card">
+                <div class="project-text">
+                    <h2>University of Utah Research Assistant</h2>
+                    <p class="date-tag">2021-2023</p>
+                    <p class="par">
+                        Peter gained his optoelectronic skills in Dr. Rogachev's laboratory, focusing on spectrum analysis of commercial OLEDs. 
+                        The project involved discovering a modeling method for OLEDs through admittance spectroscopy.
                     </p>
-                    
+                    <p class="par">
+                        The role required maintenance of structured LabView code, Python simulation, and LTspice for operational amplifier designs. 
+                        He designed a two-stage amplifying process using AD8065 high-speed amplifiers to reach higher spectrums for data analysis.
+                    </p>
+                </div>
+                <div class="project-img">
+                    <img src="Modeling inspiration.jpeg" alt="OLED Modeling Inspiration">
+                </div>
+            </section>
+
+            <section class="project-card reverse">
+                <div class="project-text">
                     <h2>Machine Learning</h2>
-                    <p class = "par">
-                    Machine learning basics. 
-                    <img src="bishop.jpeg" 
-                    height=300px 
-                    width=300px 
-                    style="float:right;padding-right:60px" />Peter spent some time building a practice code that consists of executing machine learning techniuqes such 
-                    as Guassian fit on random data found online.    
-                    Using maximum likelyhood and designing neural network(main just trigger functions), he is 
-                    still in the process of learning the basics of Machine learning. The book that Peter is following is called "Bishop-Pattern-Recognition-And-Pattern-Learning".
-                </p>
-                <br></br>
-                <br></br>
-                    <!--header -->
-
-                    <h2 style="padding-left:60px">Website designing</h2>
-                    <p class = "par">
-                    Peter helped desgin and maintain the website for his fater Luke Chan  <img src="LukeChanDao.jpeg" 
-                    height=300px 
-                    padding-right=300px
-    
-                    style="float:left ;padding-right:30px " />Peter spent some time building a practice code that consists of executing machine learning techniuqes such 
-                    as Guassian fit on random data found online.    
-                    Using maximum likelyhood and designing neural network(main just trigger functions), he is 
-                    still in the process of learning the basics of Machine learning. The book that Peter is following is called "Bishop-Pattern-Recognition-And-Pattern-Learning".
-                    click<button onclick="location.href='https://www.daoofchinese.com'" type = "button">here</button> for more info 
-                </p>
-                     
-
-
+                    <p class="par">
+                        Peter built practice code executing Gaussian fits on random data using Maximum Likelihood and neural networks. 
+                        He is currently studying "Pattern Recognition and Machine Learning" by Christopher Bishop.
+                        The implementation of machine learning comes handy when Peter searches knwoledge in that of quantative financing.
+                        Notes were made in <strong>Latex</strong> language when he types and refreshes his mind in his favorite note keepe -Jupyter notbooke.
+                        
+                    </p>
                 </div>
-            </div>
-            <div class="menu" >
-                <div class="btmbr" style="height:2px">
-                    <ul>
-                        <li class = "myli" style="padding-top:205vh"><a href="index.html"> Home</a></li>
-                        <li class = "myli" style="padding-top:205vh"><a href="about.html"> About </a></li>
-                        <li class = "myli" style="padding-top:205vh"><a href="ps.html"> Projects & Skills</a></li>
-                        <li class=  "myli" style="padding-top:205vh"><a href="contact.html"> Contact</a></li>
-
-                    </ul>
+                <div class="project-img">
+                    <img src="bishop.jpeg" alt="Pattern Recognition Book Cover">
                 </div>
-            </div>
+            </section>
+
+            <section class="project-card">
+                <div class="project-text">
+                    <h2>Website Designing</h2>
+                    <p class="par">
+                        Peter helped design and maintain the website for his father, Luke Chan. 
+                        He continues to refine his skills in <strong>HTML</strong> and <strong>CSS</strong> to build professional portfolios.
+                        He realizes his flaws in terms of professional coding skills, thus he starts adopting Google's AI at the start of 2026.
+                        The code is much cleaner and saves precious time. Peter strongly believes that the AI is better at coding then he is, but understanding the 
+                        code requires time and experience. This is the true strength of coders in this modern era.
+                        
+                    </p>
+                    <a href="https://www.daoofchinese.com" class="custom-btn" target="_blank">Visit Site</a>
+                </div>
+                <div class="project-img">
+                    <img src="LukeChanDao.jpeg" alt="Luke Chan Website Preview">
+                </div>
+            </section>
         </div>
+
+        <footer class="bottom-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ps.html">Projects & Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
     </div>
-
 </body>
-
-
-
-
 </html>

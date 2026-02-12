@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   color:white;
+
     /* Keeping your background logic */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 20%, rgba(249, 249, 249, 0.1) 80%), 
                 url('nebula-space-dark-5k-58-2560x1600.jpg');
@@ -36,6 +36,8 @@ body {
     text-decoration: none;
     color: lime;
     font-size: 1.5rem;
+    border:6px groove black;
+    background-color: rgba(10,10,10,0.9);
     font-weight: bold;
     opacity: 0.8;
     transition: 0.3s;
@@ -126,7 +128,9 @@ h1 span {
     margin-top: 30px;
     line-height: 1.6;
     letter-spacing: 1px;
-    max-width: 600px;
+    max-width: 800px;
+    margin-left:600px;
+
 }
 
 .mini-thumb {
@@ -174,4 +178,145 @@ h1 span {
         align-items: center;
         gap: 15px;
     }
+}
+
+/* PROJECT CARDS */
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+    padding: 20px;
+    background:white; /* Transparent dark box */
+    border-radius: 15px;
+    border-left: 5px solid lime;
+}
+
+/* Alternate image position for every other card */
+.project-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-text h2 {
+    color: lime;
+    text-decoration: none; /* Removed underline for modern look */
+    margin-bottom: 10px;
+}
+
+.date-tag {
+    color: darkblue;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.project-img img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Custom Button for links */
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: lime;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.custom-btn:hover {
+    background: white;
+}
+
+/* Responsive fix for small screens */
+@media (max-width: 800px) {
+    .project-card, .project-card.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* CONTACT PAGE STYLES */
+.contact-list {
+    list-style:square;
+    display:grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    max-width: 500px;
+}
+
+.contact-item:hover {
+    background: rgba(0,255,0, 0.9);
+    transform: translateX(10px); /* Nudges the link to the right on hover */
+}
+
+/* Scaling the Icons */
+.logo-box {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white; /* Gives icons a clean white background */
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.contact-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the whole icon fits inside the box without cropping */
+}
+
+.contact-item span {
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.abcontent h1 {
+    color: lime;
+    text-decoration: none; /* Removed underline for modern look */
+    margin-bottom: 50px;
+    text-align: center;
+
+    
+}
+
+
+.abcontent h2 {
+    color: lime;
+    text-decoration: none; /* Removed underline for modern look */
+    margin-bottom: 10px;
+
+}
+
+.page-title{
+    text-align: center;
+    margin-top:-20px;
+}
+
+.contact-card p {
+    text-align: center;
+    color:white;
 }
