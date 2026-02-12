@@ -1,0 +1,177 @@
+/* GLOBAL RESET */
+* {
+    box-sizing: border-box; /* Makes sizing easier */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color:white;
+    /* Keeping your background logic */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 20%, rgba(249, 249, 249, 0.1) 80%), 
+                url('nebula-space-dark-5k-58-2560x1600.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* MAIN LAYOUT ENGINE */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Takes up full screen height */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content on large screens */
+    padding: 20px;
+}
+
+/* NAVIGATION */
+.navbar {
+    padding: 20px 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: lime;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.logo a:hover {
+    opacity: 1;
+    text-shadow: 0 0 10px lime;
+}
+
+/* CONTENT AREA */
+.content-wrapper {
+    flex: 1; /* This pushes the footer to the bottom automatically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers content */
+}
+
+h1 {
+    color: lime;
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* SLIDER (Kept your logic, just cleaned up) */
+.slide-wrapper {
+    position: relative;
+    max-width: 700px;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,255,0, 0.2);
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    /* Hide scrollbar */
+    scrollbar-width: none; 
+}
+
+.slider::-webkit-scrollbar { 
+    display: none; 
+}
+
+.slider img {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    height: 400px;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.slider-nav a {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+    background-color: lime;
+}
+
+/* TEXT CONTENT */
+.intro-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: chartreuse;
+    margin-top: 30px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    max-width: 600px;
+}
+
+.mini-thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* FOOTER MENU */
+.bottom-menu {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.bottom-menu ul {
+    display: flex;
+    justify-content: space-around; /* Spreads items evenly */
+    list-style: none;
+    padding-top: 20px;
+    flex-wrap: wrap; /* Allows wrapping on small phones */
+}
+
+.bottom-menu a {
+    text-decoration: none;
+    color: white;
+    font-family: Cambria, serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.bottom-menu a:hover {
+    color: lime;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    .slider img { height: 250px; }
+    .bottom-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}

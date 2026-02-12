@@ -1,78 +1,54 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf -8">
-    <meta name="viewport" content="width = device - width, initial-scale=1.0">
-    <title>Main</title>
-    <link rel="stylesheet" href="styles.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Chan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="main">
+    <div class="main-container">
+        <nav class="navbar">
+            <h2 class="logo"><a href="index.html">Peter Chan</a></h2>
+        </nav>
 
-        <div class="navigationbr">
-            <div class="icon">
-                <h2 class="logo"><a href="index.html" tabindex="1">Peter Chan</a></h2>
-            </div>
+        <div class="content-wrapper">
+            <header class="hero-section">
+                <h1><br>Peter Chan's<br><span>Portfolio</span></h1>
+            </header>
 
-        </div>  
-
-
-
-            
-
-            <div class="content">
-                <!--header -->
-                <h1><br>Peter Chan's<br><span>portfolio</span> </h1>
-                <section class="container">
-
-                    <!--Slide wrap start with frame -->
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <!--image slides-->
-                            <img id="slide-1" src="01BB57A6-F6A2-48A5-B63C-2D275BFC1BBB.jpeg" width="20" hieght="2"
-                            alt="my photo next to lake" />
-                            <img id="slide-2" src="76728817-4A40-4F68-83F8-8B8C66B67232.jpeg" width="20" hieght="2"
-                            alt="my photo" />
-                            <img id="slide-3" src="88F1BDD1-0DE2-4FDA-B998-E262A4D206FE.jpeg" width="20" hieght="2"
-                            alt="peter's lab photo" />
-                        </div>
-                        <!--navigation dots -->
-                        <div class="slider-nav">
-                            <a href="#slide-1"></a>
-                            <a href="#slide-2"></a>
-                            <a href="#slide-3"></a>
-                        </div>
+            <section class="slider-container">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="01BB57A6-F6A2-48A5-B63C-2D275BFC1BBB.jpeg" alt="Peter by the lake" />
+                        <img id="slide-2" src="76728817-4A40-4F68-83F8-8B8C66B67232.jpeg" alt="Peter portrait" />
+                        <img id="slide-3" src="88F1BDD1-0DE2-4FDA-B998-E262A4D206FE.jpeg" alt="Lab photo" />
                     </div>
-                </section>
-                <!--paragraph content-->
-                <p class="par">This is an introduction to<br>
-
-                    the projects that Peter has put his hands on<br>
-                    这是Peter陈在他学术生涯和工作经历上<br>
-                    接手过的项目的网站
-                    <img src="../pictures/76728817-4A40-4F68-83F8-8B8C66B67232.jpeg">
-                </p>
-
-
-            </div>
-            <div class="menu">
-                <div class="btmbr">
-                    <ul>
-                        <li><a href="index.html"> Home</a></li>
-                        <li><a href="about.html"> About </a></li>
-                        <li><a href="ps.html"> Project & Skills</a></li>
-                        <li><a href="contact.html"> Contact</a></li>
-
-                    </ul>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                    </div>
                 </div>
-            </div>
-       
+            </section>
+
+            <article class="intro-text">
+                <p>
+                    This is an introduction to the projects that Peter has put his hands on.<br>
+                    <span lang="zh">这是Peter陈在他学术生涯和工作经历上接手过的项目的网站</span>
+                </p>
+                <img class="mini-thumb" src="../pictures/76728817-4A40-4F68-83F8-8B8C66B67232.jpeg" alt="Thumbnail">
+            </article>
+        </div>
+
+        <footer class="bottom-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ps.html">Projects & Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
     </div>
-
-
 </body>
-
 </html>
