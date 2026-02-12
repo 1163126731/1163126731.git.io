@@ -74,11 +74,12 @@ h1 span {
 /* SLIDER (Kept your logic, just cleaned up) */
 .slide-wrapper {
     position: relative;
+    align-content: center;
     max-width: 700px;
     margin: 20px 0;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,255,0, 0.2);
+    box-shadow: 0 0 20px rgba(0,255,0, 0.1);
 }
 
 .slider {
@@ -125,11 +126,13 @@ h1 span {
 .intro-text {
     font-family: 'Courier New', Courier, monospace;
     color: chartreuse;
+    font-size:larger;
     margin-top: 30px;
     line-height: 1.6;
     letter-spacing: 1px;
     max-width: 800px;
-    margin-left:600px;
+    text-align: center;
+
 
 }
 
